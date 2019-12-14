@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+
+	<script src="https://cdn.pubnub.com/sdk/javascript/pubnub.4.20.2.js">
+
+eon.chart({
+        channels: ['eon-chart'],
+        history: true,
+        flow: true,
+        pubnub: pubnub,
+        generate: {
+          bindto: '#chart',
+          data: {
+            labels: false
+          }
+        }
+      });
+
+
+</script>
+
+</head>
+  <body>
+        <h1>IoT Plant</h1>
+
+
+<button type="button" onclick="publish('ON')">Auto Mode ON</button>
+<button type="button" onclick="publish('OFF')">Auto Mode OFF</button>
+<button type="button" onclick="publish('WATER')">Water Plant</button>
+
+  </body>
+</html>
+
+
+
+
