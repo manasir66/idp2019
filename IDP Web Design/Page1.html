@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+
+<head>
+
+
+<title>Automatic Mode</title>
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<style>
+
+
+
+/* Style the body */
+body {
+  font-family: Courier;
+  margin: 0;
+  background-color: #222629;
+
+}
+
+
+
+/* Header/Logo Title */
+.header {
+  padding: 1px;
+  background: #61892F;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+/* Page Content */
+.content {padding:20px;}
+
+
+/*
+.btn {
+   border: none;
+   color: white;
+   margin-top:10%;
+   margin-left: 22%;
+   padding: 14px 28px;
+   font-size: 25px;
+   cursor: pointer;
+}
+*/
+
+.button {
+  font-family: Comic Sans MS;
+  font-size: 25px;
+  background-color: #86C232; /* Green background */
+  border: 1px solid green; /* Green border */
+  color: white; /* White text */
+  padding: 14px 28px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  width: 50%; /* Set a width if needed */
+  display: block; /* Make the buttons appear below each other */
+  margin-left: 25%;
+  margin-top:4%;
+  
+}
+
+/*
+.success{background-color: #86C232;}
+.success:hover {background-color:#ddd;}
+
+.warning {background-color:#86C232;}
+.warning:hover {background-color:#ddd;}
+*/
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #61892F;
+  color: white;
+  text-align: center;
+}
+
+
+@media screen and (min-width:600px)
+{
+    .button{
+      width: 50%;
+    }
+
+}
+
+
+</style>
+
+
+</head>
+
+
+<body>
+
+
+
+<div class="header">
+  <h1>WATER SUPPLY CONTROL PANEL</h1>
+</div>
+
+
+
+<a href="http://192.168.2.4:5000/page1.html/on"><button class="button"> Switch ON  </button></a>
+
+<a href="Graph.html"><button class="button">Graph</button></a>
+
+<a href="http://192.168.2.4:5000/page1.html/off"><button class="button">Emergency Switch OFF</button></a>
+
+
+
+<div class="footer">
+  <p>IDP 2019 GROUP 15</p>
+</div>
+
+
+</body>
+
+
+</html>
