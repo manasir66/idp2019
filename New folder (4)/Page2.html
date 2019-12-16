@@ -23,18 +23,35 @@
 <style>
 
 
+
 body {
   font-family: Courier;
   margin: 0;
-  background-color: #222629;
-
+    /* Location of the image */
+  background-image: url(background.png);
+  
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+  
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
 }
 
+ 
 
 /* Header/Logo Title */
 .header {
   padding: 1px;
-  background: #61892F;
+  background: black;
+  opacity: 0.6;
   text-align: center;
   color: white;
   font-size: 20px;
@@ -44,28 +61,67 @@ body {
 .content {padding:20px;}
 
 
+.button {
+  font-family: Comic Sans MS;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: transparent;
+  background-repeat:no-repeat;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  color: black; 
+  padding: 14px 28px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  overflow: hidden
+  width: 100%; /* Set a width if needed */
+  display: block; /* Make the buttons appear below each other */
+  margin-left: 25%;
+  margin-top:17%;
+  
+}
+
+
+a:link {
+  text-decoration: none ;
+}
+
+a:hover {
+ text-decoration: none;
+}
+
 .footer {
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #61892F;
+  background: black;
+  opacity: 0.6;
   color: white;
   text-align: center;
 }
 
+form { 
+  font-family: Comic Sans MS;
+  font-size: 25px;
+  font-weight: bold;
+  margin-left: 20%;
+  margin-top:10%; 
+
+}
+
+@media screen and (min-width:300px)
+{
+    .btn{
+      width: 50%;
+    }
+
+}
+
+
 
 </style>
 
-
-
-
-<script type="text/javascript">
-  
-  var input = window.prompt(" Enter the Timer in Minutes : ");
-  alert(" Your Time is " + input ); 
-
-</script>
 
 
 
@@ -80,6 +136,18 @@ body {
 <div class="footer">
   <p>IDP 2019 GROUP 15</p>
 </div>
+
+
+<form  action="/action_page.php">
+
+Enter the Timer (in Minutes) you Want to Set : <input type="number" name="number" value="      "><br>
+
+<input type="submit" value=" Enter ">
+</form>
+
+
+
+<a href="IDP 1.0.html" onclick="history.go(-1)"><button class="button">Back</button></a> 
 
 
 </body>
